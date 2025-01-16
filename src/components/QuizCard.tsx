@@ -16,6 +16,12 @@ export const QuizCard = ({ title, description, questionCount, difficulty, icon }
     Advanced: "bg-red-500",
   }[difficulty];
 
+  const difficultyTranslations = {
+    Beginner: "Iniciante",
+    Intermediate: "Intermediário",
+    Advanced: "Avançado",
+  }[difficulty];
+
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer">
       <CardHeader>
@@ -23,14 +29,14 @@ export const QuizCard = ({ title, description, questionCount, difficulty, icon }
           <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:animate-float">
             {icon}
           </div>
-          <Badge className={difficultyColor}>{difficulty}</Badge>
+          <Badge className={difficultyColor}>{difficultyTranslations}</Badge>
         </div>
         <CardTitle className="mt-4">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-gray-600 mb-4">{description}</p>
         <div className="text-sm text-gray-500">
-          {questionCount} questions
+          {questionCount} questões
         </div>
       </CardContent>
     </Card>

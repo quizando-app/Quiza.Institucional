@@ -15,8 +15,8 @@ export const Navbar = () => {
             <span className="text-2xl font-bold text-primary">Quiza!</span>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" onClick={handleLoginClick}>Login</Button>
-            <Button className="bg-primary hover:bg-primary/90">SignUp</Button>
+            <Button variant="ghost" onClick={handleLoginClick}>Entrar</Button>
+            <Button className="bg-primary hover:bg-primary/90">Cadastrar</Button>
           </div>
         </div>
       </div>
