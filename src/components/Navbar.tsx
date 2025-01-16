@@ -12,7 +12,7 @@ export const Navbar = () => {
           </div>
           <div className="flex items-center space-x-4">
             <Button variant="ghost">Login</Button>
-            <Button className="bg-primary hover:bg-primary/90">Register</Button>
+            <Button className="bg-primary hover:bg-primary/90">SignUp</Button>
           </div>
         </div>
       </div>
